@@ -1,303 +1,563 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Juncheng Liu</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/heroic-features.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Juncheng Liu's Homepage</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling --
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Publications</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div> 
-            < /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Jumbotron Header -->
-        <style>
-            #wai{ width:1000px;  overflow:hidden}
-            .divleft{ float:left; width:300px; position: static;top: 50%; margin-top: 4.4%;}
-            .divright{ float:right; width:900px; margin-left: 5%}
-            .container {display: grid;}
-            .divcontainer {display: flex;}
-        </style>
-        <div class="divcontainer">
-        <div class="divleft" >
-                <img class="img-responsive" src="./publications/IMG_0402.jpg" alt="" width="300" height="200">
-        </div>
-        <div  class="divright" >
-            <header class="jumbotron hero-spacer" >
-                <!--h1>Juncheng(Jeffrey) Liu   &nbsp&nbsp&nbsp  <!/h1-->
-                <p> Hi 👋, I'm Juncheng Liu.
-                <p>I obtained my PhD degree in computer science from Peking University in 2019. During my PhD I visited Cardiff University as a visiting scholar working with Prof. Paul Rosin in the visual computing group. After finishing my PhD, I got a fixed-term contract of postdoctoral research fellowship from University of Otago. Currently I work in computer science department at University of Otago as a lecturer.  </p>
-
-                <p> My research interests lie at 3D graphics, machine learning and robotics. See my updated CV <a href="./publications/CV.pdf" style="color: rgb(88,88,88) "><b>here</b>.</a></p></p>
-                <!--p>
-                    <a href="#con" class="btn btn-info btn-large" role="button">Contact</a>
-                    <a href="http://geometry.cs.ucl.ac.uk/tuanfeng/cv.pdf" class="btn btn-success btn-large">Curriculum Vitae (pdf)</a>
-                    <a href="https://scholar.google.co.uk/citations?user=NJmBzK4AAAAJ&hl=en" class="btn btn-primary btn-large">Google Scholar</a>
-                <!/p-->
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Juncheng Liu's Homepage</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
         
-            </header>
-        </div>
-        </div>
-
-        <hr>
-
-        <!-- Title -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3>Publications</h3>
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#about">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#education">Education</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#education">Experience</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#publication">Publication</a></li>
+								<li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#activity">Activities</a></li> 
+							</ul>
+						</div> 
+					</div>
+            	</nav>
             </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Page Features -->
-        <div class="row text-center">
-            <div class="row">
-                <div style="margin-left:5em;" class="col-md-3">
-
-                        <img class="img-responsive" src="./publications/coseg.png" alt="">
-
-                </div>
-                <div class="col-md-8">
-                    <h4 align="left">Image-driven Unsupervised 3D Model Co-segmentation</h4>
-                    <h5 align="left">Juncheng Liu, Paul L. Rosin, Xianfang Sun, Zhouhui Lian, Jianguo Xiao</h5>
-                    <p align="left">The Visual Computer Journal (Proc. CGI'19).</p>
-                    <p align="left"> <a href="./publications/coseg.pdf" style="color: rgb(88,88,88) "><b>Paper</b></a></p>
-                </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+           	<div class="container box_1620" style="min-height: 0px;">
+           		<div class="banner_inner d-flex align-items-center" style="min-height: 0px; padding: 0px;">
+					<div class="banner_content">
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/personal.jpg" alt="">
+							</div>
+							<div class="media-body">
+								<div class="personal_text">
+									<h6 style="text-transform: none;">Hi, Kia ora and 你好 👋 , I am</h6>
+									<h3 style="font-size:x-large;">Juncheng Liu</h3>
+									<h4>Lecturer</h4>
+									<p>Department of Computer Science, University of Otago</p>
+									<ul class="list basic_info">
+										<li><a href="#"><i class="lnr lnr-envelope"></i> juncheng.liu@otago.ac.nz</a></li>
+										<li><a href="#"><i class="lnr lnr-home"></i> 133 Union St East, North Dunedin, NZ</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-            <div class="row">
-                <div style="margin-left:5em;" class="col-md-3">
-                    <a>
-                        <img class="img-responsive" src="./publications/canonical.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <h4 align="left">An evaluation of canonical forms for non-rigid 3D shape retrieval</h4>
-                    <h5 align="left">David Pickup, Juncheng Liu, Xianfang Sun, Paul L. Rosin, Ralph R. Martin, Zhiquan Cheng, Zhouhui Lian et al.</h5>
-                    <p align="left">Graphical Models 97 (2018): 17-29.</p>
-                    <p align="left"> <a href="./publications/canonical.pdf" style="color: rgb(88,88,88) "/><b>Paper</b></p>
-                </div>
-            </div>
-            <div class="row">
-                <div style="margin-left:5em;" class="col-md-3">
-                    <a>
-                        <img class="img-responsive" src="./publications/iknda.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <h4 align="left">Incremental Kernel Null Space Discriminant Analysis for Novelty Detection</h4>
-                    <h5 align="left">Juncheng Liu, Zhouhui Lian, Yi Wang, and Jianguo Xiao. </h5>
-                    <p align="left">IEEE Conference on Computer Vision and Pattern Recognition(CVPR) 2017</p>
-                    <p align="left"> <a href="./publications/iknda.pdf" style="color: rgb(88,88,88) "><b>Paper</b></a></p>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+        <section class="welcome_area p_120" id="about">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>About Myself</h4>
+        					<p>I obtained my PhD degree in computer science from Peking University in 2019. During my PhD I visited Cardiff University as a visiting scholar working with Prof. Paul Rosin in the visual computing group. After finishing my PhD, I got a fixed-term contract of postdoctoral research fellowship from University of Otago. Currently I work in computer science department at University of Otago as a lecturer.
+								My research interests lie at 3D graphics, machine learning and robotics. See my updated <a href="pdfs/Juncheng_CV.pdf">CV</a> here.</p>
+        					<div class="row">
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-database"></i>
+        								<h4>7</h4>
+        								<p>Journal papers</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>6</h4>
+        								<p>Conference papers</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<h4>102</h4>
+        								<p>Total Citations</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="tools_expert">
+        					<div class="skill_main">
+								<div class="skill_item">
+									<h4>Python/Pytorch <span class="counter">85</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>Matlab <span class="counter">90</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>C/C++ <span class="counter">70</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>HTML/CSS <span class="counter">95</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+								<div class="skill_item">
+									<h4>JavaScript/Node.js <span class="counter">75</span>%</h4>
+									<div class="progress_br">
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+        
+        <!--================My Tabs Area =================-->
+        <section class="mytabs_area p_120" id="education">
+        	<div class="container">
+        		<div class="tabs_inner">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>2022 to present</p>
+										</div>
+										<div class="media-body">
+											<h4>University of Otago</h4>
+											<p>Lecturer <br />Dunedin, NZ</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span></span>
+									<div class="media">
+										<div class="d-flex">
+											<p>2019 to 2022</p>
+										</div>
+										<div class="media-body">
+											<h4>University of Otago</h4>
+											<p>Postdoctoral Fellow<br />Dunedin, NZ</p>
+										</div> 
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<ul class="list">
+								<li>
+									<span></span>
+										<div class="media">
+											<div class="d-flex">
+												<p>2013 to 2019</p>
+											</div>
+											<div class="media-body">
+												<h4>Peking University</h4>
+												<p>PhD <br />Beijing, China</p>
+											</div>
+										</div>
+								</li>
+								<li>
+									<span></span>
+										<div class="media">
+											<div class="d-flex">
+												<p>2017 to 2018</p>
+											</div>
+											<div class="media-body">
+												<h4>Cardiff University</h4>
+												<p>Visiting Scholar <br />Cradiff, UK</p>
+											</div>
+										</div>
+									</li>
+								<li>
+									<span></span>
+										<div class="media">
+											<div class="d-flex">
+												<p>2009 to 2013</p>
+											</div>
+											<div class="media-body">
+												<h4>Dalian University of Technology</h4>
+												<p>BSc <br />Dalian, China</p>
+											</div>
+										</div>
+									</li>
+							</ul>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End My Tabs Area =================-->
 
-                    
-                </div>
-            </div>
-        	<div class="row">
-                <div style="margin-left:5em;" class="col-md-3">
-                    <a>
-                        <img class="img-responsive" src="./publications/meshunfolding.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <h4 align="left">3D Mesh Unfolding using Semidefinite Programming</h4>
-                    <h5 align="left">Juncheng Liu, Zhouhui Lian, Jianguo Xiao.</h5>
-                    <p align="left">Eurographics Workshop on 3D Object Retrieval(3DOR) 2017.</p>
-                    <p align="left"> <a href="./publications/meshunfolding.pdf" style="color: rgb(88,88,88) "><b>Paper</b></a></p>
+        
+        <!--================Research paper Area =================-->
+        <section class="home_gallery_area p_120" id="publication">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2 style="text-transform: none;">Latest Publications/Projects</h2>
+        		</div>
+        		<div class="isotope_fillter">
+        			<ul class="gallery_filter list">
+						<li class="active" data-filter="*"><a href="#">All</a></li>
+						<li data-filter=".3d"><a href="#">3D Processing</a></li>
+						<li data-filter=".ml"><a href="#">Machine Learning</a></li>
+						<li data-filter=".robotics"><a href="#">Robotics</a></li>
+						<li data-filter=".cv"><a href="#">Computer Vision</a></li>
+					</ul>
+        		</div>
+        	</div>
+        	<div class="container" id="paperContainer">
+        		<div class="gallery_f_inner row imageGallery1" >
+        			
 
-                    
-                </div>
-            </div>
+					<!--2020 3DV RocNet-->
+					<div class="col-lg-4 col-md-4 col-sm-6 3d cv ml">
+        			    <div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/rocnet_3dv2020.png" alt="">
+        						<a class="light" href="img/gallery/rocnet_3dv2020.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Recursive Octree Network for Efficient 3D Deep Representation</h4>
+        						<p>Liu, J., Mills, S. and McCane, B. International Conference on 3D Vision (3DV) 2020 (pp. 414-422)</p>
+								<a href="./publications/rocnet.pdf"><b style="color: rgb(88,88,88)">Paper</b></a>
+        					</div>
+        				</div>
+					</div>
 
-            <div class="row">
-                <div style="margin-left:5em;" class="col-md-3">
-                    <a>
-                        <img class="img-responsive" src="./publications/autocolorization.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <h4 align="left">Auto-colorization of 3D models from images</h4>
-                    <h5 align="left">Juncheng Liu, Zhouhui Lian and Jianguo Xiao.</h5>
-                    <!--p align="left"> </p-->
-                    <p align="left">SIGGRAPH Asia 2017 Technical Briefs.</p>
-
-                    <p align="left"> <a href="./publications/autocolorization.pdf" style="color: rgb(88,88,88) "><b>Paper</b></a></p>
-
-                    
-                </div>
-            </div>
-
-            <div class="row">
-                <div style="margin-left:5em;" class="col-md-3">
-                    <a>
-                        <img class="img-responsive" src="./publications/sbm.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <h4 align="left">Sketch based modeling via manifold regularization</h4>
-                    <h5 align="left">Juncheng Liu, Zhouhui Lian, Jie Feng, Bingfeng Zhou.</h5>
-                    <p align="left">SIGGRAPH Asia 2015 Technical Briefs.</p>
-                    <p align="left"> <a href="./publications/sbm.pdf" style="color: rgb(88,88,88) "><b>Paper</b></a></p>
-
-                    
-                </div>
-            </div>
-
-            <div class="row">
-                <div style="margin-left:5em;" class="col-md-3">
-                    <a>
-                        <img class="img-responsive" src="./publications/character.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <h4 align="left">Online Gesture-based Interaction with Visual Oriental Characters based on Manifold Learning</h4>
-                    <h5 align="left">Yi Wang, Juncheng Liu, Xin Fan, Xiangjian He, Qi Jia, Renjie Gao.</h5>
-                    <p align="left">Signal Processing, 110: 123-131, 2015.</p>
-                    <p align="left"><a href="./publications/character.pdf" style="color: rgb(88,88,88) "><b>Paper</b></a> 
-
-                    
-                </div>
-            </div>
+					<!--2019 MTAPP MBS-->
+					<div class="col-lg-4 col-md-4 col-sm-6 3d ">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/sbm_mtapp.png" style="
+									height: 216px;
+									max-width: 100%;
+								  " alt="">
+        						<a class="light" href="img/gallery/sbm_mtapp.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Sketch based modeling and editing via shape space exploration</h4>
+        						<p>Juncheng Liu, Zhouhui Lian, Jianguo Xiao</p>
+									
+								<p>Multimedia Tools and Application 79, 18121–18142 (2020).</p>
+								<!--a href="./publications/coseg.pdf"><b style="color: rgb(88,88,88)">Paper</b></a-->
+        					</div>
+        				</div>	
+					</div>	
 
 
-            <div class="row">
-                <div style="margin-left:5em;" class="col-md-3">
-                    <a>
-                        <img class="img-responsive" src="./publications/gestures.png" alt="">
-                    </a>
-                </div>
-                <div class="col-md-8">
-                    <h4 align="left">Real-time Estimation of Hand Gestures based on Manifold Learning from Monocular Videos</h4>
-                    <h5 align="left">Yi Wang, Zhongxuan Luo, Juncheng Liu, Xin Fan, Haojie Li, Yunzhen Wu.</h5>
-                    <p align="left">Multimedia Tools and Applications, 71(2): 555-574, 2014.</p>
-                    <p align="left"> <a href="./publications/gestures.pdf" style="color: rgb(88,88,88) "><b>Paper</b></a></p>
-                </div>
-            </div>
+					<!--2019 CGI Coseg-->
+					<div class="col-lg-4 col-md-4 col-sm-6 3d ">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/coseg.png" style="
+									height: 216px;
+									max-width: 100%;
+								  " alt="">
+        						<a class="light" href="img/gallery/coseg.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Image-driven Unsupervised 3D Model Co-segmentation</h4>
+        						<p>
+									Juncheng Liu, Paul L. Rosin, Xianfang Sun, Zhouhui Lian, Jianguo Xiao</p>
+									
+								<p>The Visual Computer Journal (Proc. CGI'19).</p>
+								<a href="./publications/coseg.pdf"><b style="color: rgb(88,88,88)">Paper</b></a>
+        					</div>
+        				</div>	
+					</div>					
 
 
+					<!--2018 GM Canonical-->
+					<div class="col-lg-4 col-md-4 col-sm-6 3d">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/canonical.png" style="
+									height: 216px;
+								  " alt="">
+        						<a class="light" href="img/gallery/canonical.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>An evaluation of canonical forms for non-rigid 3D shape retrieval</h4>
+        						<p>David Pickup, Juncheng Liu, Xianfang Sun, Paul L. Rosin, Ralph R. Martin, Zhiquan Cheng, Zhouhui Lian et al.</p>
+									
+								<p>Graphical Models 97 (2018): 17-29.</p>
+								<a href="./publications/canonical.pdf"><b style="color: rgb(88,88,88)">Paper</b></a>
+        					</div>
+        				</div>	
+					</div>	
 
-        </div>
-        <!-- /.row -->
 
-        <hr>
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 id="con">Research Experience</h3><a name="researchexperience"></a>
-                <p style="margin-left:5em;" align="left"> 
-                    During October 2017 and October 2018, I worked as a visiting scholar at  <a href="http://www.cardiff.ac.uk/computer-science/research/groups/visual-computing/" style="color: rgb(88,88,88) "><b>Visual Computing group of Cardiff University</b></a> co-supervised by <a href="http://users.cs.cf.ac.uk/Paul.Rosin/" style="color: rgb(88,88,88) "><b>Paul L. Rosin</b></a> and <a href="https://users.cs.cf.ac.uk/Xianfang.Sun/" style="color: rgb(88,88,88) "><b>Xianfang Sun</b></a>.
-                </p>
-                <p style="margin-left:5em;" align="left">
-                    From September 2013 to current, I was a member of LAIGL group, co-supervised by <a href="http://www.icst.pku.edu.cn/zlian/" style="color: rgb(88,88,88) "><b>Zhouhui Lian</b></a> and Jianguo Xiao.</p>
-                <p style="margin-left:5em;" align="left">  
-                	From 2012 to 2013, I was a member of <a href="http://dutmedia.org/" style="color: rgb(88,88,88) "><b>DUT Media Lab</b></a> under the direction of Yi Wang.</p>
+					<!--2017 CVPR incremental Null space-->
+					<div class="col-lg-4 col-md-4 col-sm-6 cv ml">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/iknda.png" style="
+									height: 216px;
+								  " alt="">
+        						<a class="light" href="img/gallery/iknda.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Incremental Kernel Null Space Discriminant Analysis for Novelty Detection</h4>
+        						<p>Juncheng Liu, Zhouhui Lian, Yi Wang, and Jianguo Xiao.</p>
+									
+								<p>IEEE Conference on Computer Vision and Pattern Recognition(CVPR) 2017</p>
+								<a href="./publications/iknda.pdf"><b style="color: rgb(88,88,88)">Paper</b></a>
+        					</div>
+        				</div>	
+					</div>	
 
-            </div>
-        </div>
+
+					<!--2017 3DOR mesh unfolding-->
+					<div class="col-lg-4 col-md-4 col-sm-6 3d">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/meshunfolding.png" style="
+									height: 216px;
+								  " alt="">
+        						<a class="light" href="img/gallery/meshunfolding.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>3D Mesh Unfolding using Semidefinite Programming</h4>
+        						<p>Juncheng Liu, Zhouhui Lian, Jianguo Xiao.</p>
+								<p>Eurographics Workshop on 3D Object Retrieval(3DOR) 2017.</p>
+								<a href="./publications/meshunfolding.pdf"><b style="color: rgb(88,88,88)">Paper</b></a>
+        					</div>
+        				</div>	
+					</div>
+
+					<!--2017 Siggraph autocolorization-->
+					<div class="col-lg-4 col-md-4 col-sm-6 3d">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/autocolorization.png" style="
+									height: 216px;
+								  " alt="">
+        						<a class="light" href="img/gallery/autocolorization.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Auto-colorization of 3D models from images</h4>
+        						<p>Juncheng Liu, Zhouhui Lian and Jianguo Xiao.</p>
+								<p>SIGGRAPH Asia 2017 Technical Briefs.</p>
+								<a href="./publications/autocolorization.pdf"><b style="color: rgb(88,88,88)">Paper</b></a>
+        					</div>
+        				</div>	
+					</div>
 
 
-        <hr>
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 id="con">Awards</h3>
-                <p style="margin-left:5em;" > Lee Wai Wing Scholarship of Peking University 2016-2017</p>
-                <p style="margin-left:5em;" > Award for Scientific Research 2016-2017</p>
-                <p style="margin-left:5em;" > Award for Academic Excellence of Peking University 2015-2016</p>                
-                <p style="margin-left:5em;" > Academic Excellence Scholarship of Dalian University of Technology 2009-2013</p>
-            </div>
-        </div>
+					<!--2015 Siggraph sketch based modeling-->
+					<div class="col-lg-4 col-md-4 col-sm-6 3d">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/sbm.png" style="
+									height: 216px;
+								  " alt="">
+        						<a class="light" href="img/gallery/sbm.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Sketch based modeling via manifold regularization</h4>
+        						<p>Juncheng Liu, Zhouhui Lian</p>
+								<p>SIGGRAPH Asia 2015 Technical Briefs.</p>
+								<a href="./publications/sbm.pdf"><b style="color: rgb(88,88,88)">Paper</b></a>
+        					</div>
+        				</div>	
+					</div>
 
-        <hr>
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 id="con">Contact</h3>
-                <p style="margin-left:5em;" align="left">Email: liujuncheng <i>AT</i> pku <i>dot</i> edu <i>dot</i> cn</p>
-                <p style="margin-left:5em;" >Address: 128th Zhongguancun North street, Haidian district, Beijing, China.</p>
-            </div>
-        </div>
-        <hr>
+					<!--2015 Signal Processing handwritting character-->
+					<div class="col-lg-4 col-md-4 col-sm-6 cv ml">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/character.png" style="
+									height: 216px;
+								  " alt="">
+        						<a class="light" href="img/gallery/character.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Online Gesture-based Interaction with Visual Oriental Characters based on Manifold Learning</h4>
+        						<p>Yi Wang, Juncheng Liu, Xin Fan, Xiangjian He, Qi Jia, Renjie Gao.</p>
+								<p>Signal Processing, 110: 123-131, 2015.</p>
+								<a href="./publications/character.pdf"><b style="color: rgb(88,88,88)">Paper</b></a>
+        					</div>
+        				</div>	
+					</div>
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright <a href="" style="color: rgb(88,88,88) ">&copy;</a> Juncheng Liu 2019  </p>
-                </div>
-            </div>
+
+					<!--2014 MTAPP hand gesture-->
+					<div class="col-lg-4 col-md-4 col-sm-6 cv ml">
+        				<div class="h_gallery_item">
+        					<div class="g_img_item">
+        						<img class="img-fluid" src="img/gallery/gestures.png" style="
+									height: 216px;
+								  " alt="">
+        						<a class="light" href="img/gallery/gestures.png"><img src="img/gallery/icon.png" alt=""></a>
+        					</div>
+        					<div class="g_item_text">
+        						<h4>Real-time Estimation of Hand Gestures based on Manifold Learning from Monocular Videos</h4>
+        						<p>Yi Wang, Zhongxuan Luo, Juncheng Liu, Xin Fan, Haojie Li, Yunzhen Wu.</p>
+								<p>Multimedia Tools and Applications, 71(2): 555-574, 2014.</p>
+								<a href="./publications/gestures.pdf"><b style="color: rgb(88,88,88)">Paper</b></a>
+        					</div>
+        				</div>	
+					</div>
+
+					
+
+        			</div>
+        		</div>
+        		<!--div class="more_btn" id="loadmore">
+        			<a class="main_btn"  href="#publication">Load More Items</a>
+        		</div-->
+
+
+        	</div>
+        </section>
+        <!--================End Home Gallery Area =================-->
+        
+        <!--================Teaching Area =================-->
+        <section class="testimonials_area p_120" id="teaching">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Teaching</h2>
+					<ul style="text-align: left;">
+						<li>
+							<a href="https://cosc203.cspages.otago.ac.nz">COSC203 Web, Databases and Networks. Semester 2, 2022.</a> 
+						</li>
+						<li>
+							AIML401 Python programming for AI. Semester 2, 2022.
+						</li>
+					</ul>
+        			<p></p>
+        		</div>
+			</div>
+        </section>
+        <!--================End Teaching Area =================-->
+
+		<!--================Academic activities Area =================-->
+		<section class="home_gallery_area p_120" id="activity">
+			<div class="container">
+				<div class="main_title">
+					<h2>Academic activities</h2>
+					<ul style="text-align: left;">
+						<li>
+							Reviewer for TOG, TPAMI, TKDE, SIGGRAPH Asia 2019, ICCV2021, AAAI2021, CVPR2022, ECCV2022, 3DV 2022
+						</li>
+						<li>
+							Outstanding Reviewer Award for ICCV 2021
+						</li>
+					</ul>
+					<p></p>
+				</div>
+			</div>
+		</section>
+		<!--================Academic activities Area =================-->
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area ">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="">
+        					<div class="f_title">
+        					</div>
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This page is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        			</div>
+
+        		</div>
+        	</div>
         </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        <style>
+			.img-fluid {
+				object-fit:contain;
+				
+			}
+		</style>
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 
-    </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-86294182-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-</body>
-
+    </body>
 </html>
-
